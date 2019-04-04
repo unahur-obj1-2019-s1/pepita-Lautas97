@@ -26,4 +26,39 @@ object sorgo {
 	// completar
 }
 
+
 // despues, agregar mijo y canelones
+
+object canelones{
+	var salsa = true
+	var queso = true
+	
+	
+	method energiaPorGramo(){
+		if (salsa && not queso)
+		{
+			return 25
+		} 
+		else if(queso && not salsa){
+			return 27
+		}
+		if(salsa && queso){
+			return 32
+		}
+		else
+		{
+			return 20
+		}
+		}
+	method noTieneQueso(){
+		queso = false
+	}
+	
+	method noTieneSalsa(){
+		salsa = false
+	}
+	
+}
+	
+	
+	
